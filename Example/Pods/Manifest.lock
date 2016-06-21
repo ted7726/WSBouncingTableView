@@ -1,0 +1,16 @@
+PODS:
+  - WSBouncingTableView (0.1.0)
+
+DEPENDENCIES:
+  - WSBouncingTableView (from `../`)
+
+EXTERNAL SOURCES:
+  WSBouncingTableView:
+    :path: ../
+
+SPEC CHECKSUMS:
+  WSBouncingTableView: 74a8fd18bd5188407d4c8f4be0d047c5de3e5640
+
+PODFILE CHECKSUM: c24758c8cb80c7529f384db2c6828f6963d45d23
+
+COCOAPODS: 1.0.1

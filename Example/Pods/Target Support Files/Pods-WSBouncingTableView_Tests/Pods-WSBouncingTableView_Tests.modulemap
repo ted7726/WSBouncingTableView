@@ -1,0 +1,6 @@
+framework module Pods_WSBouncingTableView_Tests {
+  umbrella header "Pods-WSBouncingTableView_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

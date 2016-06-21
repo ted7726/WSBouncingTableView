@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-A custom UITableView with bouncing properties to achieve ripples effects.
+A custom UITableView with bouncing properties to achieve ripples effects, when user scroll the tableView, the dragged cells will have certain delay and animate back to its original position.
                        DESC
 
   s.homepage         = 'https://github.com/ted7726/WSBouncingTableView'

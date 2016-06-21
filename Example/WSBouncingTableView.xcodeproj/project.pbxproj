@@ -514,7 +514,6 @@
 			baseConfigurationReference = 80A70ED25D009E618C0D35A5 /* Pods-WSBouncingTableView_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WSBouncingTableView/WSBouncingTableView-Prefix.pch";
 				INFOPLIST_FILE = "WSBouncingTableView/WSBouncingTableView-Info.plist";
@@ -530,7 +529,6 @@
 			baseConfigurationReference = 142954FDD5D7DC908B682031 /* Pods-WSBouncingTableView_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WSBouncingTableView/WSBouncingTableView-Prefix.pch";
 				INFOPLIST_FILE = "WSBouncingTableView/WSBouncingTableView-Info.plist";

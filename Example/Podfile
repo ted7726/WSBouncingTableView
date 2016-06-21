@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'WSBouncingTableView_Example' do
+  pod 'WSBouncingTableView', :path => '../'
+
+  target 'WSBouncingTableView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

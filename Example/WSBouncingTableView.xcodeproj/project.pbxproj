@@ -22,7 +22,7 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		A59D6B1817DA5874DAC278B6 /* Pods_WSBouncingTableView_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7E08A6D6D8165D0726C5253 /* Pods_WSBouncingTableView_Example.framework */; };
+		EC7971061D19C05B00E0528B /* WSBouncingTableView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC7971051D19C05B00E0528B /* WSBouncingTableView.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +64,7 @@
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		9A46911E6B5F57C224D4C2D1 /* Pods-WSBouncingTableView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WSBouncingTableView_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WSBouncingTableView_Tests/Pods-WSBouncingTableView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		C7E08A6D6D8165D0726C5253 /* Pods_WSBouncingTableView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WSBouncingTableView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC7971051D19C05B00E0528B /* WSBouncingTableView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WSBouncingTableView.framework; path = "../../../Library/Developer/Xcode/DerivedData/WSBouncingTableView-ezatahfkzmpdfgcrhnssvrcdtqmf/Build/Products/Debug-iphonesimulator/WSBouncingTableView/WSBouncingTableView.framework"; sourceTree = "<group>"; };
 		FD46269FFC61D6F42FF2DF32 /* Pods_WSBouncingTableView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WSBouncingTableView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -72,10 +73,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC7971061D19C05B00E0528B /* WSBouncingTableView.framework in Frameworks */,
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				A59D6B1817DA5874DAC278B6 /* Pods_WSBouncingTableView_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,6 +118,7 @@
 		6003F58C195388D20070C39A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EC7971051D19C05B00E0528B /* WSBouncingTableView.framework */,
 				6003F58D195388D20070C39A /* Foundation.framework */,
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,

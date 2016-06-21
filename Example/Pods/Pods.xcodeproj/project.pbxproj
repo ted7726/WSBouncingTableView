@@ -16,7 +16,7 @@
 		81671DD9684CFB1DDD763599A86D9B73 /* Pods-WSBouncingTableView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 46A6100A53E895B09F3E1DE30A9E909B /* Pods-WSBouncingTableView_Example-dummy.m */; };
 		97C660D3E6459ED2400C7CE655683316 /* WSBouncingTableView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4BC194085C6BFBAC22F0B8E6E0BC06 /* WSBouncingTableView-dummy.m */; };
 		9D7B5587E76D6BA2D88EB3955FD470C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		BDD397D531D6B733DD750CDA2EA6D477 /* WSBouncingTableView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 406172E07A0B94701ED8AAED46D07CF1 /* WSBouncingTableView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BDD397D531D6B733DD750CDA2EA6D477 /* WSBouncingTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 406172E07A0B94701ED8AAED46D07CF1 /* WSBouncingTableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D056F8EBF2A4842CCB63C73CC1FEF2CE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		D9BA82C1E596FC024706FDDB866428EA /* Pods-WSBouncingTableView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ECE6EA872ECF4163369A166A1E76B2A1 /* Pods-WSBouncingTableView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -42,7 +42,7 @@
 		1BFFD39DB12835A90AF7E0A7B83E0600 /* Pods-WSBouncingTableView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WSBouncingTableView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		24C648151D193123002BDDBE /* WSBouncingTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSBouncingTableView.h; sourceTree = "<group>"; };
 		24C648161D193123002BDDBE /* WSBouncingTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSBouncingTableView.m; sourceTree = "<group>"; };
-		406172E07A0B94701ED8AAED46D07CF1 /* WSBouncingTableView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WSBouncingTableView-umbrella.h"; sourceTree = "<group>"; };
+		406172E07A0B94701ED8AAED46D07CF1 /* WSBouncingTableView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WSBouncingTableView.h; sourceTree = "<group>"; };
 		4528511E994FD303A3D6C2DC658F0F0C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46A6100A53E895B09F3E1DE30A9E909B /* Pods-WSBouncingTableView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WSBouncingTableView_Example-dummy.m"; sourceTree = "<group>"; };
 		54C2972AEE3DDD1ED3C92072EC008EC4 /* WSBouncingTableView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WSBouncingTableView.xcconfig; sourceTree = "<group>"; };
@@ -155,7 +155,7 @@
 				54C2972AEE3DDD1ED3C92072EC008EC4 /* WSBouncingTableView.xcconfig */,
 				DB4BC194085C6BFBAC22F0B8E6E0BC06 /* WSBouncingTableView-dummy.m */,
 				0E5C0AF782B8B4D19B2A15A499055E05 /* WSBouncingTableView-prefix.pch */,
-				406172E07A0B94701ED8AAED46D07CF1 /* WSBouncingTableView-umbrella.h */,
+				406172E07A0B94701ED8AAED46D07CF1 /* WSBouncingTableView.h */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/WSBouncingTableView";
@@ -233,7 +233,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BDD397D531D6B733DD750CDA2EA6D477 /* WSBouncingTableView-umbrella.h in Headers */,
+				BDD397D531D6B733DD750CDA2EA6D477 /* WSBouncingTableView.h in Headers */,
 				24C648181D193123002BDDBE /* WSBouncingTableView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -316,7 +316,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0730;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -434,6 +434,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/WSBouncingTableView/WSBouncingTableView.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "${PRODUCT_BUNDLE_IDENTIFIER}";
 				PRODUCT_NAME = WSBouncingTableView;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -637,6 +638,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/WSBouncingTableView/WSBouncingTableView.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "${PRODUCT_BUNDLE_IDENTIFIER}";
 				PRODUCT_NAME = WSBouncingTableView;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;

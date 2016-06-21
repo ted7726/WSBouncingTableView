@@ -1,5 +1,5 @@
 framework module WSBouncingTableView {
-  umbrella header "WSBouncingTableView-umbrella.h"
+  umbrella header "WSBouncingTableView.h"
 
   export *
   module * { export * }
